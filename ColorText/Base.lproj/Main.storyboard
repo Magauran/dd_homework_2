@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,124 +8,1011 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCG-cl-7Jf">
-                                <rect key="frame" x="16" y="64" width="343" height="694"/>
+                                <rect key="frame" x="16" y="30" width="288" height="440"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert text to text field" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6q-6s-qzM">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7C-nd-rho">
-                                        <rect key="frame" x="0.0" y="41" width="343" height="562"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. </string>
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light"/>
-                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XXa-f8-0hd">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="352.5"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7C-nd-rho">
+                                                <rect key="frame" x="5" y="5" width="278" height="342.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment>
+                                                        <string key="content">About Objective-C
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="28" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="32.142501831054688" minimumLineHeight="33" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="1">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">Objective-C is the primary programming language you use when writing software for OS X and iOS. It’s a superset of the C programming language and provides object-oriented capabilities and a dynamic runtime. Objective-C inherits the syntax, primitive types, and flow control statements of C and adds syntax for defining classes and methods. It also adds language-level support for object graph management and object literals while providing dynamic typing and binding, deferring many responsibilities until runtime.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">At a Glance
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24.309999465942383" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="20.177299499511719" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.23529411764705882" green="0.29803921568627451" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">This document introduces the Objective-C language and offers extensive examples of its use. You’ll learn how to create your own classes describing custom objects and see how to work with some of the framework classes provided by Cocoa and Cocoa Touch. Although the framework classes are separate from the language, their use is tightly wound into coding with Objective-C and many language-level features rely on behavior offered by these classes.</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">An App Is Built from a Network of Objects
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">When building apps for OS X or iOS, you’ll spend most of your time working with objects. Those objects are instances of Objective-C classes, some of which are provided for you by Cocoa or Cocoa Touch and some of which you’ll write yourself.
+If you’re writing your own class, start by providing a description of the class that details the intended public interface to instances of the class. This interface includes the public properties to encapsulate relevant data, along with a list of methods. Method declarations indicate the messages that an object can receive, and include information about the parameters required whenever the method is called. You’ll also provide a class implementation, which includes the executable code for each method declared in the interface.
+</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Categories Extend Existing Classes
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">Rather than creating an entirely new class to provide minor additional capabilities over an existing class, it’s possible to define a category to add custom behavior to an existing class. You can use a category to add methods to any class, including classes for which you don’t have the original implementation source code, such as framework classes like </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSString">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">.
+If you do have the original source code for a class, you can use a class extension to add new properties, or modify the attributes of existing properties. Class extensions are commonly used to hide private behavior for use either within a single source code file, or within the private implementation of a custom framework.
+</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Protocols Define Messaging Contracts
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">The majority of work in an Objective-C app occurs as a result of objects sending messages to each other. Often, these messages are defined by the methods declared explicitly in a class interface. Sometimes, however, it is useful to be able to define a set of related methods that aren’t tied directly to a specific class.
+Objective-C uses protocols to define a group of related methods, such as the methods an object might call on its </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="delegate">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">, which are either optional or required. Any class can indicate that it adopts a protocol, which means that it must also provide implementations for all of the required methods in the protocol.
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Values and Collections Are Often Represented as Objective-C Objects
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="It’s common in Objective-C to use Cocoa or Cocoa Touch classes to represent values. The ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSString">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" class is used for strings of characters, the ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSNumber">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" class for different types of numbers such as integer or floating point, and the ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSValue">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" class for other values such as C structures. You can also use any of the primitive types defined by the C language, such as ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="int">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="float">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" or ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="char">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">.
+Collections are usually represented as instances of one of the collection classes, such as </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSArray">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSSet">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=", or ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSDictionary">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">, which are each used to collect other Objective-C objects.
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Blocks Simplify Common Tasks
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">Blocks are a language feature introduced to C, Objective-C and C++ to represent a unit of work; they encapsulate a block of code along with captured state, which makes them similar to closures in other programming languages. Blocks are often used to simplify common tasks such as collection enumeration, sorting and testing. They also make it easy to schedule tasks for concurrent or asynchronous execution using technologies like Grand Central Dispatch (GCD).
+</mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Error Objects Are Used for Runtime Problems
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">Although Objective-C includes syntax for exception handling, Cocoa and Cocoa Touch use exceptions only for programming errors (such as out of bounds array access), which should be fixed before an app is shipped.
+All other errors—including runtime problems such as running out of disk space or not being able to access a web service—are represented by instances of the </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="NSError">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> class. Your app should plan for errors and decide how best to handle them in order to present the best possible user experience when something goes wrong.
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Objective-C Code Follows Established Conventions
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="18.850000381469727" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="4.7125000953674316" minimumLineHeight="22" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="3">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">When writing Objective-C code, you should keep in mind a number of established coding conventions. Method names, for example, start with a lowercase letter and use camel case for multiple words; for example, </string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="doSomething">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" or ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="doSomethingElse">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13.390000343322754" name="Courier"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">. It’s not just the capitalization that’s important, though; you should also make sure that your code is as readable as possible, which means that method names should be expressive, but not too verbose.
+In addition, there are a few conventions that are required if you wish to take advantage of language or framework features. Property accessor methods, for example, must follow strict naming conventions in order to work with technologies like </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Key-Value Coding">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" (KVC) or ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Key-Value Observing">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content"> (KVO).
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Prerequisites
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24.309999465942383" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="20.177299499511719" minimumLineHeight="28" defaultTabInterval="36" tighteningFactorForTruncation="0.0" headerLevel="2">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.23529411764705882" green="0.29803921568627451" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <mutableString key="content">If you are new to OS X or iOS development, you should read through Start Developing iOS Apps Today or Start Developing Mac Apps Today before reading this document, to get a general overview of the application development process for iOS and OS X. Additionally, you should become familiar with Xcode before trying to follow the exercises at the end of most chapters in this document. Xcode is the IDE used to build apps for iOS and OS X; you’ll use it to write your code, design your app's user interface, test your application, and debug any problems.
+Although it’s preferable to have some familiarity with C or one of the C-based languages such as Java or C#, this document does include inline examples of basic C language features such as flow control statements. If you have knowledge of another higher-level programming language, such as Ruby or Python, you should be able to follow the content.
+Reasonable coverage is given to general object-oriented programming principles, particularly as they apply in the context of Objective-C, but it is assumed that you have at least a minimal familiarity with basic object-oriented concepts. If you’re not familiar with these concepts, you should read the relevant chapters in </mutableString>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Concepts in Objective-C Programming">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.14509803921568626" green="0.14442899209999999" blue="0.14442899209999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="13" name="LucidaGrande"/>
+                                                            <real key="NSKern" value="0.0"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="10.829000473022461" minimumLineHeight="16" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                            <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                                                            <real key="NSStrokeWidth" value="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="light"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="point" keyPath="contentOffset">
+                                                        <point key="value" x="0.0" y="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="automaticallyAdjustsScrollViewInsets" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96074161584365481" green="0.96074161584365481" blue="0.96074161584365481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="T7C-nd-rho" secondAttribute="trailing" constant="5" id="5oA-b4-MpH"/>
+                                            <constraint firstAttribute="bottom" secondItem="T7C-nd-rho" secondAttribute="bottom" constant="5" id="RbE-pD-9GX"/>
+                                            <constraint firstItem="T7C-nd-rho" firstAttribute="top" secondItem="XXa-f8-0hd" secondAttribute="top" constant="5" id="VhD-qe-io9"/>
+                                            <constraint firstItem="T7C-nd-rho" firstAttribute="leading" secondItem="XXa-f8-0hd" secondAttribute="leading" constant="5" id="b3E-d4-oTb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-zt-n8m">
-                                        <rect key="frame" x="0.0" y="664" width="60.666666666666671" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="0.0" y="411" width="49.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <state key="normal" title="Red">
                                             <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeTextColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDU-gK-ZSn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQx-79-3yg">
-                                        <rect key="frame" x="211.66666666666669" y="664" width="60.666666666666686" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="179" y="411" width="49.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <state key="normal" title="Orange">
                                             <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeTextColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rKt-bK-sU5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfe-Z9-6fo">
-                                        <rect key="frame" x="282.33333333333326" y="664" width="60.666666666666686" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="238.5" y="411" width="49.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <state key="normal" title="Cancel">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeTextColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jh5-or-KN7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arF-iP-eOs">
-                                        <rect key="frame" x="141.33333333333334" y="664" width="60.333333333333314" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="119" y="411" width="50" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <state key="normal" title="Blue">
                                             <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeTextColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8X-0E-oEE"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a piece of text and set the color." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze2-EX-m4d">
-                                        <rect key="frame" x="0.0" y="623" width="343" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="372.5" width="288" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGL-KU-eas">
-                                        <rect key="frame" x="70.666666666666657" y="664" width="60.666666666666657" height="30"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="59.5" y="411" width="49.5" height="29"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <state key="normal" title="Green">
-                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="changeTextColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbw-TC-UFu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="oGL-KU-eas" firstAttribute="leading" secondItem="6sJ-zt-n8m" secondAttribute="trailing" constant="10" id="3Sa-yt-xVM"/>
                                     <constraint firstAttribute="bottom" secondItem="arF-iP-eOs" secondAttribute="bottom" id="3ez-Qf-b5Y"/>
                                     <constraint firstItem="arF-iP-eOs" firstAttribute="top" secondItem="ze2-EX-m4d" secondAttribute="bottom" constant="20" id="4el-kU-F6Q"/>
                                     <constraint firstItem="arF-iP-eOs" firstAttribute="width" secondItem="AQx-79-3yg" secondAttribute="width" id="7ne-UD-gAL"/>
-                                    <constraint firstItem="i6q-6s-qzM" firstAttribute="leading" secondItem="fCG-cl-7Jf" secondAttribute="leading" id="7qZ-8x-iQY"/>
                                     <constraint firstAttribute="trailing" secondItem="ze2-EX-m4d" secondAttribute="trailing" id="9sf-dJ-t0a"/>
                                     <constraint firstAttribute="bottom" secondItem="6sJ-zt-n8m" secondAttribute="bottom" id="APj-PV-wV6"/>
-                                    <constraint firstItem="i6q-6s-qzM" firstAttribute="top" secondItem="fCG-cl-7Jf" secondAttribute="top" id="Ec2-vo-o5W"/>
-                                    <constraint firstAttribute="trailing" secondItem="T7C-nd-rho" secondAttribute="trailing" id="IDW-Wh-s1f"/>
+                                    <constraint firstItem="ze2-EX-m4d" firstAttribute="top" secondItem="XXa-f8-0hd" secondAttribute="bottom" constant="20" id="ICb-l9-xIz"/>
                                     <constraint firstItem="6sJ-zt-n8m" firstAttribute="leading" secondItem="fCG-cl-7Jf" secondAttribute="leading" id="Kby-UC-SvE"/>
                                     <constraint firstItem="oGL-KU-eas" firstAttribute="width" secondItem="arF-iP-eOs" secondAttribute="width" id="OLB-ZQ-nI7"/>
                                     <constraint firstAttribute="bottom" secondItem="Tfe-Z9-6fo" secondAttribute="bottom" id="Pdl-iN-XII"/>
                                     <constraint firstItem="ze2-EX-m4d" firstAttribute="leading" secondItem="fCG-cl-7Jf" secondAttribute="leading" id="R5Z-E1-Y85"/>
-                                    <constraint firstItem="ze2-EX-m4d" firstAttribute="top" secondItem="T7C-nd-rho" secondAttribute="bottom" constant="20" id="SpP-mL-jUn"/>
+                                    <constraint firstItem="XXa-f8-0hd" firstAttribute="top" secondItem="fCG-cl-7Jf" secondAttribute="top" id="Ttd-8P-J4q"/>
                                     <constraint firstAttribute="bottom" secondItem="AQx-79-3yg" secondAttribute="bottom" id="UXU-lg-29K"/>
                                     <constraint firstItem="6sJ-zt-n8m" firstAttribute="width" secondItem="oGL-KU-eas" secondAttribute="width" id="Zeg-v6-bpf"/>
                                     <constraint firstItem="AQx-79-3yg" firstAttribute="leading" secondItem="arF-iP-eOs" secondAttribute="trailing" constant="10" id="adb-n5-Sj1"/>
                                     <constraint firstItem="arF-iP-eOs" firstAttribute="leading" secondItem="oGL-KU-eas" secondAttribute="trailing" constant="10" id="amm-Ma-6tP"/>
-                                    <constraint firstItem="T7C-nd-rho" firstAttribute="leading" secondItem="fCG-cl-7Jf" secondAttribute="leading" id="fhd-f2-LWK"/>
                                     <constraint firstAttribute="bottom" secondItem="oGL-KU-eas" secondAttribute="bottom" id="hP3-nk-isH"/>
                                     <constraint firstAttribute="trailing" secondItem="Tfe-Z9-6fo" secondAttribute="trailing" id="he2-L4-usA"/>
-                                    <constraint firstAttribute="trailing" secondItem="i6q-6s-qzM" secondAttribute="trailing" id="kRf-p8-xRR"/>
+                                    <constraint firstItem="XXa-f8-0hd" firstAttribute="leading" secondItem="fCG-cl-7Jf" secondAttribute="leading" id="jtD-yi-GFx"/>
                                     <constraint firstItem="Tfe-Z9-6fo" firstAttribute="leading" secondItem="AQx-79-3yg" secondAttribute="trailing" constant="10" id="oGX-BP-G74"/>
-                                    <constraint firstItem="T7C-nd-rho" firstAttribute="top" secondItem="i6q-6s-qzM" secondAttribute="bottom" constant="20" id="oRO-hy-rAp"/>
                                     <constraint firstItem="AQx-79-3yg" firstAttribute="width" secondItem="Tfe-Z9-6fo" secondAttribute="width" id="syQ-gs-SfQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="XXa-f8-0hd" secondAttribute="trailing" id="yDo-nU-Cng"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fCG-cl-7Jf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MP5-Ph-K1Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fCG-cl-7Jf" secondAttribute="trailing" constant="16" id="WVo-c0-wc6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fCG-cl-7Jf" secondAttribute="bottom" constant="20" id="Wrq-pw-oOe"/>
-                            <constraint firstItem="fCG-cl-7Jf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wgW-eM-t2x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fCG-cl-7Jf" secondAttribute="bottom" constant="10" id="Wrq-pw-oOe"/>
+                            <constraint firstItem="fCG-cl-7Jf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wgW-eM-t2x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="T7C-nd-rho" id="Kzl-Nl-uhj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
