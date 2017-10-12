@@ -14,6 +14,16 @@
 
 @implementation ViewController
 
+@synthesize textView;
+
+- (IBAction)changeTextColor:(UIButton *)sender {
+    NSRange range = [self.textView selectedRange];
+    if (!range.length) {
+        range = NSMakeRange(0, self.textView.text.length);
+    }
+    [self.textView.textStorage addAttribute:NSForegroundColorAttributeName value:sender.currentTitleColor range: range];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +35,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (IBAction)changeTextColor:(UIButton *)sender {
-}
 @end
