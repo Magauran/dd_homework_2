@@ -9,12 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
-
-@synthesize textView;
 
 - (IBAction)changeTextColor:(UIButton *)sender {
     NSRange range = [self.textView selectedRange];

@@ -30,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="352.5"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7C-nd-rho">
-                                                <rect key="frame" x="5" y="5" width="278" height="342.5"/>
+                                                <rect key="frame" x="5" y="0.0" width="278" height="352.5"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
                                                         <string key="content">About Objective-C
@@ -907,8 +907,8 @@ Reasonable coverage is given to general object-oriented programming principles, 
                                         <color key="backgroundColor" red="0.96074161584365481" green="0.96074161584365481" blue="0.96074161584365481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="T7C-nd-rho" secondAttribute="trailing" constant="5" id="5oA-b4-MpH"/>
-                                            <constraint firstAttribute="bottom" secondItem="T7C-nd-rho" secondAttribute="bottom" constant="5" id="RbE-pD-9GX"/>
-                                            <constraint firstItem="T7C-nd-rho" firstAttribute="top" secondItem="XXa-f8-0hd" secondAttribute="top" constant="5" id="VhD-qe-io9"/>
+                                            <constraint firstAttribute="bottom" secondItem="T7C-nd-rho" secondAttribute="bottom" id="RbE-pD-9GX"/>
+                                            <constraint firstItem="T7C-nd-rho" firstAttribute="top" secondItem="XXa-f8-0hd" secondAttribute="top" id="VhD-qe-io9"/>
                                             <constraint firstItem="T7C-nd-rho" firstAttribute="leading" secondItem="XXa-f8-0hd" secondAttribute="leading" constant="5" id="b3E-d4-oTb"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
