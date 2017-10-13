@@ -21,6 +21,14 @@
     [self.textView.textStorage addAttribute:NSForegroundColorAttributeName value:sender.currentTitleColor range: range];
 }
 
+- (IBAction)clearButton:(UIButton *)sender {
+    NSRange range = [self.textView selectedRange];
+    if (!range.length) {
+        range = NSMakeRange(0, self.textView.text.length);
+    }
+    [self.textView.textStorage removeAttribute:NSForegroundColorAttributeName range:range];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
