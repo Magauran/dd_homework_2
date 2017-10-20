@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-@end
+#import "ListOfTextViewController.h"
 
 @implementation ViewController
 
@@ -29,15 +27,27 @@
     [self.textView.textStorage removeAttribute:NSForegroundColorAttributeName range:range];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)viewListButton:(UIButton *)sender {
+    NSMutableArray* textWithColor = [[NSMutableArray alloc] init];
+    [self.textView.textStorage enumerateAttribute:NSForegroundColorAttributeName inRange:NSMakeRange(0, self.textView.text.length) options:0 usingBlock:^(id value, NSRange range, BOOL *stop) {
+        if (value) {
+            NSAttributedString *text = [self.textView.textStorage attributedSubstringFromRange:range];
+            [textWithColor addObject:text];
+        }
+    }];
+    [self performSegueWithIdentifier:@"showListOfTextSegue" sender:textWithColor];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"showListOfTextSegue"]){
+        ListOfTextViewController *controller = (ListOfTextViewController *)segue.destinationViewController;
+        [controller setTextWithColor:sender];
+    }
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 @end
