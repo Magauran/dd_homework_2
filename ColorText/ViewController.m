@@ -39,7 +39,7 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString:@"showListOfTextSegue"]){
+    if ([segue.identifier isEqualToString:@"showListOfTextSegue"]) {
         ListOfTextViewController *controller = (ListOfTextViewController *)segue.destinationViewController;
         [controller setTextWithColor:sender];
     }

@@ -29,6 +29,7 @@
     
     cell.textLabel.numberOfLines = 0;
     cell.textLabel.attributedText = [self.textWithColor objectAtIndex:indexPath.row];
+    
     return cell;
 }
 
