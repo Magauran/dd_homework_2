@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface ListOfTextViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-@property (copy, nonatomic) NSArray * textWithColor;
+
+@property (weak, nonatomic) id<ViewControllerDelegate> delegate;
+@property (nonatomic) NSMutableArray * textWithColor;
+
 @end

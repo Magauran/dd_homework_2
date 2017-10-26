@@ -9,6 +9,13 @@
 #import "ViewController.h"
 #import "ListOfTextViewController.h"
 
+@interface ViewController()
+
+@property (nonatomic) NSArray * dataFromController;
+
+@end
+
+
 @implementation ViewController
 
 - (IBAction)changeTextColor:(UIButton *)sender {
@@ -19,31 +26,43 @@
     [self.textView.textStorage addAttribute:NSForegroundColorAttributeName value:sender.currentTitleColor range: range];
 }
 
+
 - (IBAction)clearButton:(UIButton *)sender {
     NSRange range = [self.textView selectedRange];
     if (!range.length) {
         range = NSMakeRange(0, self.textView.text.length);
     }
-    [self.textView.textStorage removeAttribute:NSForegroundColorAttributeName range:range];
+    [self removeForegroundColorAttributeWithRange:range];
 }
+
 
 - (IBAction)viewListButton:(UIButton *)sender {
     NSMutableArray* textWithColor = [[NSMutableArray alloc] init];
     [self.textView.textStorage enumerateAttribute:NSForegroundColorAttributeName inRange:NSMakeRange(0, self.textView.text.length) options:0 usingBlock:^(id value, NSRange range, BOOL *stop) {
         if (value) {
-            NSAttributedString *text = [self.textView.textStorage attributedSubstringFromRange:range];
-            [textWithColor addObject:text];
+            NSAttributedString *text = (NSAttributedString *)[self.textView.textStorage attributedSubstringFromRange:range];
+            TextWithRange *twr = [[TextWithRange alloc] initWithText:text range:range];
+            [textWithColor addObject:twr];
         }
     }];
     [self performSegueWithIdentifier:@"showListOfTextSegue" sender:textWithColor];
 }
 
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showListOfTextSegue"]) {
         ListOfTextViewController *controller = (ListOfTextViewController *)segue.destinationViewController;
+        ViewController *firstController = (ViewController *)segue.sourceViewController;
         [controller setTextWithColor:sender];
+        controller.delegate = firstController;
     }
 }
+
+
+- (void)removeForegroundColorAttributeWithRange:(NSRange)range {
+    [self.textView.textStorage removeAttribute:NSForegroundColorAttributeName range:range];
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

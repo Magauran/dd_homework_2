@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TextWithRange.h"
 
-@interface ViewController : UIViewController
+@protocol ViewControllerDelegate <NSObject>
+
+- (void)removeForegroundColorAttributeWithRange:(NSRange)range;
+
+@end
+
+
+@interface ViewController : UIViewController <ViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView * textView;
 
 @end
+
+
 
