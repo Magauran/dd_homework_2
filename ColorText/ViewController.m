@@ -69,4 +69,9 @@
     [self.navigationController setNavigationBarHidden:YES];
 }
 
+
+- (void)viewDidAppear:(BOOL)animated {
+    [self.textView setContentOffset:CGPointZero];
+}
+
 @end
