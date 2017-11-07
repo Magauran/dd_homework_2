@@ -11,7 +11,7 @@
 
 @interface ListOfTextViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
-@property (weak, nonatomic) id<ViewControllerDelegate> delegate;
-@property (nonatomic) NSMutableArray * textWithColor;
+@property (nonatomic, assign) id<ViewControllerDelegate> delegate;
+@property (nonatomic, retain) NSMutableArray * textWithColor;
 
 @end

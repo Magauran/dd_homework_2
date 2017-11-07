@@ -18,7 +18,7 @@
 
 @interface ViewController : UIViewController <ViewControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextView * textView;
+@property (assign, nonatomic) IBOutlet UITextView * textView;
 
 @end
 

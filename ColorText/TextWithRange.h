@@ -10,11 +10,12 @@
 
 @interface TextWithRange : NSObject<NSCopying>
 
-@property (nonatomic) NSAttributedString * _Nonnull text;
+@property (nonatomic, retain) NSAttributedString * _Nonnull text;
 @property (nonatomic) NSRange range;
 
 - (id _Nonnull )initWithText:(NSAttributedString *_Nonnull)text
-             range:(NSRange)range;
+                       range:(NSRange)range;
 - (nonnull id)copyWithZone:(nullable NSZone *)zone;
+- (void)dealloc;
 
 @end

@@ -9,12 +9,6 @@
 #import "ViewController.h"
 #import "ListOfTextViewController.h"
 
-@interface ViewController()
-
-@property (nonatomic) NSArray * dataFromController;
-
-@end
-
 
 @implementation ViewController
 
@@ -37,14 +31,17 @@
 
 
 - (IBAction)viewListButton:(UIButton *)sender {
-    NSMutableArray* textWithColor = [[NSMutableArray alloc] init];
+    NSMutableArray* textWithColor = [[[NSMutableArray alloc] init] autorelease];
+    
     [self.textView.textStorage enumerateAttribute:NSForegroundColorAttributeName inRange:NSMakeRange(0, self.textView.text.length) options:0 usingBlock:^(id value, NSRange range, BOOL *stop) {
         if (value) {
             NSAttributedString *text = (NSAttributedString *)[self.textView.textStorage attributedSubstringFromRange:range];
-            TextWithRange *twr = [[TextWithRange alloc] initWithText:text range:range];
-            [textWithColor addObject:twr];
+            TextWithRange *textWithRange = [[TextWithRange alloc] initWithText:text range:range];
+            [textWithColor addObject:textWithRange];
+            [textWithRange release];
         }
     }];
+    
     [self performSegueWithIdentifier:@"showListOfTextSegue" sender:textWithColor];
 }
 
@@ -71,6 +68,7 @@
 
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:true];
     [self.textView setContentOffset:CGPointZero];
 }
 

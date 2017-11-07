@@ -12,6 +12,7 @@
 
 - (IBAction)backToTextButton:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:true];
+    [self.textWithColor release];
 }
 
 
@@ -27,9 +28,10 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     TextWithRange *textWithRange = [self.textWithColor objectAtIndex:indexPath.row];
-    
+
     [self.delegate removeForegroundColorAttributeWithRange: textWithRange.range];
     [self.textWithColor removeObjectAtIndex:indexPath.row];
+    
     [tableView reloadData];
 }
 
@@ -38,9 +40,9 @@
     static NSString *tableIdentifier = @"colorTextCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
     
-    cell.textLabel.numberOfLines = 0;
     TextWithRange *textWithRange = [self.textWithColor objectAtIndex:indexPath.row];
     cell.textLabel.attributedText = textWithRange.text;
+    cell.textLabel.numberOfLines = 0;
     
     return cell;
 }

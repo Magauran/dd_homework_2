@@ -25,4 +25,9 @@
     return copy;
 }
 
+- (void)dealloc {
+    [self.text release];
+    [super dealloc];
+}
+
 @end
