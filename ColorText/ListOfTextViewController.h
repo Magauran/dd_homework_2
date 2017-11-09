@@ -6,7 +6,6 @@
 //  Copyright © 2017 Алексей. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "ViewController.h"
 
 @interface ListOfTextViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>

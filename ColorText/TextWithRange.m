@@ -10,6 +10,12 @@
 
 @implementation TextWithRange
 
+- (void)dealloc {
+    [_text release];
+    [super dealloc];
+}
+
+
 - (id)initWithText:(NSAttributedString *)text
              range:(NSRange)range {
     if (self = [super init]) {
@@ -25,9 +31,5 @@
     return copy;
 }
 
-- (void)dealloc {
-    [self.text release];
-    [super dealloc];
-}
 
 @end

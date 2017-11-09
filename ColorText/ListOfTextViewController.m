@@ -10,19 +10,21 @@
 
 @implementation ListOfTextViewController
 
+- (void)dealloc {
+    [_textWithColor removeAllObjects];
+    _textWithColor = nil;
+    [_textWithColor release];
+    [super dealloc];
+}
+
+
 - (IBAction)backToTextButton:(UIButton *)sender {
     [self.navigationController popViewControllerAnimated:true];
-    [self.textWithColor release];
 }
 
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.textWithColor.count;
-}
-
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return true;
 }
 
 
@@ -39,11 +41,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *tableIdentifier = @"colorTextCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableIdentifier];
-    
     TextWithRange *textWithRange = [self.textWithColor objectAtIndex:indexPath.row];
     cell.textLabel.attributedText = textWithRange.text;
     cell.textLabel.numberOfLines = 0;
-    
     return cell;
 }
 

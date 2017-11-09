@@ -6,7 +6,6 @@
 //  Copyright © 2017 Алексей. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "TextWithRange.h"
 
 @protocol ViewControllerDelegate <NSObject>
@@ -18,7 +17,7 @@
 
 @interface ViewController : UIViewController <ViewControllerDelegate>
 
-@property (assign, nonatomic) IBOutlet UITextView * textView;
+@property (assign, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
