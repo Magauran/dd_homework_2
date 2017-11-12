@@ -838,7 +838,7 @@ Reasonable coverage is given to general object-oriented programming principles, 
                                                 </userDefinedRuntimeAttributes>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.96074161584365481" green="0.96074161584365481" blue="0.96074161584365481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="T7C-nd-rho" secondAttribute="trailing" constant="5" id="5oA-b4-MpH"/>
                                             <constraint firstAttribute="bottom" secondItem="T7C-nd-rho" secondAttribute="bottom" id="RbE-pD-9GX"/>
@@ -982,7 +982,7 @@ Reasonable coverage is given to general object-oriented programming principles, 
                                     <action selector="backToTextButton:" destination="kLh-T3-wM3" eventType="touchUpInside" id="xlO-U0-n7y"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D8Z-16-nwI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D8Z-16-nwI">
                                 <rect key="frame" x="15" y="79" width="345" height="533"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -991,6 +991,14 @@ Reasonable coverage is given to general object-oriented programming principles, 
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sn8-r6-ZKN" id="1o9-fU-Btx">
                                             <rect key="frame" x="0.0" y="0.0" width="345" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="separatorCell" rowHeight="10" id="JTy-H1-jQs">
+                                        <rect key="frame" x="0.0" y="72" width="345" height="10"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JTy-H1-jQs" id="e5l-6c-wrY">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="10"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
